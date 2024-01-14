@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.welcomeTextContainer{
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 50px;
+    color: rgba(255, 110, 0, 1);
+}
+
+@media screen and (max-width: 380px) {
+    .welcomeTextContainer{
+        font-size: 40px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+}

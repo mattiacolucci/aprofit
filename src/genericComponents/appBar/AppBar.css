@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+.appBar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 66, 0, 1);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.appBarTitle{
+    color: white;
+    font-size: 40px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-family: 'Nunito';
+}
+
+.appBarIconContainer{
+    width:50px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .appBarTitle{
+        margin-left: 30px;
+    }
+}

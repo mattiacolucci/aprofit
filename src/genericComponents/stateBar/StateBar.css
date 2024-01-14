@@ -1,0 +1,24 @@
+.stateBar{
+    margin-top: 30px;
+    width: 350px;
+    height: 60px;
+    bottom: -40px;
+    background: rgba(255, 66, 0, 1);
+    content: 'Scheda Utente';
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    font-family: ''Oswald'';
+    align-self: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    .stateBar{
+        width: 250px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+}
+

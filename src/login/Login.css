@@ -1,0 +1,105 @@
+.containerLogin{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fef2e3;
+    overflow: hidden;
+}
+
+.loginContainer{
+    width: 400px;
+    height: 400px;
+
+    /* From https://css.glass */
+    background: rgba(255, 110, 0, 0.6);
+    border-radius: 16px;
+    box-shadow: 10px 10px 15px rgba(255, 66, 0, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.loginTitle{
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+
+.itemLogin{
+    width: 300px;
+    height: 30px;
+    background: #f8f8f8;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 66, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    caret-color: black;
+    font-size: 20px;
+    color:black;
+}
+
+.itemLogin::placeholder{
+    color: rgba(0,0,0, 0.4);
+}
+
+.submitLogin{
+    width: 200px;
+    height: 50px;
+    background: rgba(255, 66, 0, 0.8);
+    text-align: center;
+    line-height: 50px;
+    padding: 0;
+    font-size: 20px;
+    border: 0;
+    outline: none !important;
+    color: white;
+    transition: all 0.5s;
+}
+
+.submitLogin:hover{
+    scale: 1.1;
+}
+
+.registerButton{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 475px) {
+    .loginContainer{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .itemLogin{
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .itemLogin{
+        font-size: 17px;
+    }
+
+    .loginTitle{
+        font-size: 35px;
+    }
+}

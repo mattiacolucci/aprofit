@@ -1,0 +1,155 @@
+.registerContainer{
+    width: 400px;
+    height: 500px;
+
+    /* From https://css.glass */
+    background: rgba(255, 110, 0, 0.6);
+    border-radius: 16px;
+    box-shadow: 10px 10px 15px rgba(255, 66, 0, 0.7);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.loginTitle{
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+
+.itemLogin{
+    width: 300px;
+    height: 30px;
+    background: #f8f8f8;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 66, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    caret-color: black;
+    font-size: 20px;
+    color:black;
+}
+
+.itemLogin::placeholder{
+    color: rgba(0,0,0, 0.4);
+}
+
+.submitLogin{
+    width: 200px;
+    height: 50px;
+    background: rgba(255, 66, 0, 0.8);
+    text-align: center;
+    line-height: 50px;
+    padding: 0;
+    font-size: 20px;
+    border: 0;
+    outline: none !important;
+    color: white;
+    transition: all 0.5s;
+}
+
+.submitLogin:hover{
+    scale: 1.1;
+}
+
+.loginButton{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.passwResponseContainer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 17px;
+    margin-top: -5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fef2e3;
+    border-radius: 10px;
+}
+
+.passwResponseText{
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.passwInfo{
+    max-width: 200px;
+    padding: 20px;
+    background: rgba(255, 110, 0, 1);
+    border-radius: 20px;
+    border: white 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    transition: all 0.5s;
+}
+
+.passwInfoText{
+    color: white;
+    font-size: 20px;
+}
+
+.scaleAni{
+    animation: scaleAni 0.8s linear;
+    box-shadow: 0px 0px 20px 0px red;
+}
+
+@keyframes scaleAni {
+    0%{
+        scale: 1;
+    }50%{
+        scale: 1.1;
+    }100%{
+        scale: 1;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .registerContainer{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .itemLogin{
+        width: 250px !important;
+    }
+
+    .passwResponseContainer{
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .passwInfoText{
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .itemLogin{
+        font-size: 17px;
+    }
+
+    .loginTitle{
+        font-size: 35px;
+    }
+}

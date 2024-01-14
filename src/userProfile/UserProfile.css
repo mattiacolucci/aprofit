@@ -1,0 +1,187 @@
+div{
+    z-index: 2;
+}
+
+.userProfileTitle{
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 100%;
+    font-size: 50px;
+    color: rgba(255, 110, 0, 1);
+}
+
+.userDataContainer{
+    width: 100%;
+    padding: 50px;
+    /*box-shadow: inset 0px 0px 15px 7px rgba(255, 110, 0, 0.1);*/
+    border-radius: 30px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.userDataItemContainer{
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.userDataItemTitle{
+    font-size: 35px;
+    color: #333333;
+}
+
+.userDataItemTitle2{
+    font-size: 35px;
+    color: rgb(255, 110, 1);
+    align-self: center;
+    border-bottom: 5px solid rgb(255, 66, 1);
+}
+
+.flexboxBreak{
+    flex-basis: 100%;
+}
+
+.userDataItemText{
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: rgba(255, 68, 0, 0.3);
+    border-radius: 5px;
+    line-height: 50px;
+    font-size: 30px;
+    color: black;
+    outline: none !important;
+}
+
+.userDataItemButton{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 50px;
+    font-size: 25px;
+    background: #ea6f11;
+    outline: none !important;
+    border: 0;
+    border-radius: 5px;
+    align-self: flex-start;
+    color: white;
+    transition: all 0.5s;
+    padding: 0;
+    width: 200px;
+}
+
+.userDataItemButton:hover{
+    scale: 1.05;
+}
+
+@media screen and (max-width: 1000px) {
+    .userDataContainer{
+        width: 100%;
+        height: min-content;
+        align-items: center;
+        box-shadow: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .userDataItemTitle2,.userDataItemButton{
+        align-self: center;
+    }
+
+    .userDataItemButton{
+        width: 300px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .userDataItemText{
+        font-size: 25px;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .userDataItemTitle{
+        font-size: 30px;
+    }
+
+    .userDataItemButton{
+        height: 45px;
+        line-height: 45px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .userDataItemText{
+        font-size: 20px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .userDataItemTitle{
+        font-size: 25px;
+    }
+
+    .userDataItemButton{
+        height: 35px;
+        line-height: 35px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .userDataItemText{
+        font-size: 18px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+    }
+
+    .userDataItemTitle{
+        font-size: 22px;
+    }
+
+    .userDataItemButton{
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .flexboxBreak{
+        display: none;
+    }
+
+    .userDataItemContainer{
+        align-items: flex-start;
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .userDataItemTitle{
+        text-align: center;
+    }
+
+    .userDataItemButton{
+        width: 65vw;
+    }
+
+    .userDataItemText{
+        width: 70vw;
+    }
+}

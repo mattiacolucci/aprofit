@@ -1,0 +1,31 @@
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: #fef2e3;
+    color: var(--clr-primary-400);
+    font-size: var(--fs-500);
+    font-family: 'Roboto', sans-serif;
+    font-weight: var(--fw-regular);
+    height: min-content;
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+    padding-bottom: 90px;
+    padding-top: 80px;
+  }
+
+.bgImage{
+    height: 100vh;
+    opacity: 0.2;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    user-select: none;
+    pointer-events: none;
+}
+
+div{
+  font-family: 'Oswald';
+}
